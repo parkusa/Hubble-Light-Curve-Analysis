@@ -1,6 +1,0 @@
-export lref='best_refs/'  #this will have to be run so python knows
-where to obtain reference files
-
-
-location of env
-C:\Users\pahi9557\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\pahi9557\anaconda3\envs

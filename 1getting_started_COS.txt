@@ -1,0 +1,24 @@
+#open bash
+cd astroconda           # This is in localdisk->windows->system32->astroconda
+conda activate cos  # I created this environment which contains stistools
+export lref='best_refs/'  #this will have to be run so python knows
+                          #where to obtain reference files
+
+#to get ref files:
+export lref='best_refs/'
+export CRDS_PATH="$HOME/crds_cache"
+export CRDS_SERVER_URL="https://hst-crds.stsci.edu"
+export oref="${CRDS_PATH}/references/hst/oref/"
+crds bestrefs --update-bestrefs --sync-references=1 --files *.fits
+
+
+
+location of env
+C:\Users\pahi9557\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\pahi9557\anaconda3\envs
+
+
+To start getting best refs, request used reference files on HST MAST archive
+You can then add any missing ones that come up at https://hst-crds.stsci.edu/
+
+
+I recently (4/12/2021) upgraded calcos to v 3.3.10 with: pip install calcos --upgrade
